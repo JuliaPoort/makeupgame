@@ -1,0 +1,68 @@
+body {
+    background-color: pink;
+}
+h1 {
+    color: black;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-size: 6em;
+    font-style: normal;
+    text-align: center;
+}
+.poppetje{
+    display: flex;
+}
+.poppetje button {
+    display: flex;
+    background-color: brown;
+    border-radius: 2em;
+    padding: 1em;
+    font-size: x-large;
+    color: white;
+    margin-top: 2em;
+    width: 7em;
+    justify-content: center;
+
+}
+#meisje {
+    position: absolute;
+    margin-left: 22em;
+}
+
+ #masker {
+    position: absolute;
+    margin-left: 22em;
+ }
+ #oogschaduw {
+    position: absolute;
+    margin-left: 22em;
+ }
+ #mascara {
+    position: absolute;
+    margin-left: 22em;
+ }
+ #blush {
+    position: absolute;
+    margin-left: 22em;
+ }
+ 
+.zichtbaar{
+    display: block;
+}
+
+.onzichtbaar{
+    display: none;
+}
+button{
+    background-color: brown;
+    border-radius: 2em;
+    padding: 0em;
+}
+.refreshbutton{
+    float: right;
+    margin-right: 2em;
+}
+
+.refreshbutton img{
+    padding: 0em;
+}
