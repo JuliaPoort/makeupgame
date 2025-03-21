@@ -1,6 +1,3 @@
-const buttonMask = document.querySelector('#mask')
-const maskerImg = document.querySelector('#masker')
-
 const buttonEyes = document.querySelector('#eyes')
 const oogschaduwImg = document.querySelector('#oogschaduw')
 
@@ -10,24 +7,13 @@ const mascaraImg = document.querySelector('#mascara')
 const buttonCheeks = document.querySelector('#cheeks')
 const blushImg = document.querySelector('#blush')
 
-const buttonRefresh = document.querySelector('#refresh')
-const illustratiepoppetjeImg = document.querySelector('#illustratiepoppetje')
+const buttonLips = document.querySelector('#lips')
+const lippenstiftImg = document.querySelector('#lippenstift')
 
-let maskvisible = false
 let eyesvisible = false
 let eyelashesvisible = false
 let cheeksvisible = false
-let refreshvisible = false
-
-function mask() {
-    if (maskvisible){
-    maskerImg.classList.remove('onzichtbaar');
-    maskvisible = false
-}   else {
-    maskerImg.classList.add('onzichtbaar')
-    maskvisible = true 
-}
-}
+let lipsvisible = false
 
 function eyes() {
     if (eyesvisible) {
@@ -59,16 +45,19 @@ function cheeks() {
     }
     }
 
-function refresh() {
-    if(refreshvisible) {
-        illustratiepoppetjeImg.add('onzichtbaar');
-        refreshvisible = false
+function lips() {
+    if (lipsvisible) {
+        lippenstiftImg.classList.remove('onzichtbaar');
+        lipsvisible = false
+    } else {
+        lippenstiftImg.classList.add('onzichtbaar')
+        lipsvisible = true
     }
+    
 }
 
-buttonMask.addEventListener('click', mask)
+
 buttonEyes.addEventListener('click', eyes)
 buttonEyelashes.addEventListener('click', eyelashes)
 buttonCheeks.addEventListener('click', cheeks)
-buttonRefresh.addEventListener('click',refresh)
-
+buttonLips.addEventListener('click', lips)

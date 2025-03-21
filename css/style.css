@@ -29,10 +29,6 @@ h1 {
     margin-left: 22em;
 }
 
- #masker {
-    position: absolute;
-    margin-left: 22em;
- }
  #oogschaduw {
     position: absolute;
     margin-left: 22em;
@@ -45,14 +41,16 @@ h1 {
     position: absolute;
     margin-left: 22em;
  }
+ #lippenstift {
+    position: absolute;
+    margin-left: 22em;
+ }
  
-.zichtbaar{
-    display: block;
-}
-
 .onzichtbaar{
     display: none;
 }
+
+
 button{
     background-color: brown;
     border-radius: 2em;
